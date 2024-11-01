@@ -1,8 +1,5 @@
 @import url("normalize.css");
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
-
 body {
   min-height: 100vh;
   display: flex;
@@ -50,7 +47,7 @@ nav > ul {
 }
 
 nav > ul > li {
-  font-family: Montserrat;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -96,7 +93,7 @@ hr {
 #home_header_text {
   list-style-type: none;
   margin: auto;
-  font-family: josefin sans;
+  font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -122,7 +119,7 @@ hr {
 }
 
 #home_header_content > button > h4 {
-  font-family: josefin sans;
+  font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
   font-size: 14px;
   text-align: center;
   margin: auto;
@@ -141,7 +138,7 @@ hr {
 
 h1 {
   text-align: center;
-  font-family: josefin sans;
+  font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
   color: #f1eeee;
   font-style: normal;
   font-weight: normal;
@@ -155,7 +152,7 @@ p {
   max-width: 1000px;
   margin: auto;
   color: #f1eeee;
-  font-family: montserrat;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
   font-weight: 300;
   font-size: 16px;
   padding: 20px 0px;
@@ -256,7 +253,7 @@ footer {
 }
 
 #footer_business_hours > h4 {
-  font-family: josefin sans;
+  font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
   color: #f1eeee;
   font-size: 24px;
   font-weight: normal;
