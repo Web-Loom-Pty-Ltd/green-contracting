@@ -165,6 +165,10 @@ p {
   padding-bottom: 15px;
 }
 
+#home_about p {
+  text-align: justify;
+}
+
 #home_services {
   background-color: #f1eeee;
   height: fit-content;
