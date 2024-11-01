@@ -286,6 +286,20 @@ footer {
   padding-bottom: 10px;
 }
 
+#whatsapp a {
+  text-decoration: underline;
+  color: #f1eeee;
+}
+
+#whatsapp a:hover {
+  text-decoration: none;
+  color: #f1eeee;
+}
+
+#whatsapp a:visited {
+  color: #f1eeee;
+}
+
 #email {
   display: flex;
   gap: 1rem;
