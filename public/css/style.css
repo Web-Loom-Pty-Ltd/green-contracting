@@ -15,26 +15,27 @@ html {
 }
 
 header {
+  background-image: url("../img/GC_header_background.jpg");
   background: linear-gradient(
       0deg,
-      rgba(33, 77, 40, 0.9) 0%,
+      #214d28 0%,
       rgba(30, 30, 30, 0.5) 17%,
-      rgba(30, 30, 30, 0.8) 100%
+      #1e1e1e 100%
     ),
-    url("../img/GC_header_background.jpg");
+    linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%),
+    url("../img/GC_header_background.jpg") lightgray 1.238px 0px / 99.01% 100%
+      no-repeat;
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
   width: auto;
   height: fit-content;
 }
-
 #header_container > img {
   display: block;
   margin: 15px auto;
   width: 300px;
 }
-
 #header_container {
   margin: 0px 1rem;
 }
