@@ -48,6 +48,7 @@ input {
   align-items: center;
   padding: 15px;
   margin: auto;
+  cursor: pointer;
 }
 
 #menu_button p {
@@ -68,6 +69,7 @@ nav {
   justify-content: center;
   align-items: center;
   background-color: none;
+  transition: 0.4s;
 }
 
 nav #menu_items {
@@ -92,6 +94,10 @@ nav ul li a {
   text-decoration: none;
 }
 
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
 /*hamburger menu button toggle actions*/
 
 #menu_toggle:checked ~ nav #menu_items {
@@ -113,13 +119,13 @@ nav ul li a {
 
 #menu_toggle:checked ~ nav #menu_button p {
   opacity: 100%;
-  font-size: 40px;
+  font-size: 35px;
   font-style: bold;
 }
 
 #menu_toggle:checked ~ nav {
   background-color: #3f3f3f;
-  opacity: 90%;
+  opacity: 100%;
   width: 100vw;
   height: 100vh;
   align-items: center;
@@ -149,15 +155,17 @@ nav ul li a {
 }
 
 #menu_toggle:checked ~ nav #bar1 {
-  transform: rotate(-45deg) translate(-9px, 6px) !important;
+  /*transform: rotate(-45deg) translate(-9px, 6px) !important;*/
+  transform: rotateZ(-45deg) scaleX(0.75) translate(-10px, -4px) !important;
 }
 
-#menu_toggle:checked ~ nav #bar2 {
+/*#menu_toggle:checked ~ nav #bar2 {
   opacity: 0;
-}
+}*/
 
 #menu_toggle:checked ~ nav #bar3 {
-  transform: rotate(45deg) translate(-9px, -6px) !important;
+  /*transform: rotate(45deg) translate(-8px, -5px) !important;*/
+  transform: rotateZ(45deg) scaleX(0.75) translate(-10px, 4px) !important;
 }
 
 /*rest of website*/
@@ -589,7 +597,7 @@ footer {
     padding-top: 40px;
     width: 50%;
     min-width: 200px;
-    max-width: 340px;
+    max-width: 400px;
   }
 
   .maintenance_services_item > h2 {
