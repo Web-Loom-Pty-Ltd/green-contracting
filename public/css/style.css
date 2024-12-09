@@ -35,16 +35,49 @@ header {
   margin: 0px 1rem;
 }
 
-nav > ul {
-  display: flex;
-  list-style-type: none;
-  justify-content: space-between;
-  padding-left: 0;
-  max-width: 1000px;
-  margin: 30px auto;
+/*hamburger menu styling*/
+
+input {
+  display: none;
 }
 
-nav > ul > li {
+#menu_button {
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+  align-items: center;
+  padding: 15px;
+  margin: auto;
+}
+
+#menu_button p {
+  font-size: 24px;
+  padding-left: 10px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-right: 0px;
+}
+
+label {
+  margin: auto;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: none;
+}
+
+nav #menu_items {
+  list-style-type: none;
+  justify-content: center;
+  margin: auto;
+  display: none;
+}
+
+nav ul li {
   font-family: Montserrat, Arial, Helvetica, sans-serif;
   font-size: 24px;
   font-style: normal;
@@ -52,6 +85,75 @@ nav > ul > li {
   letter-spacing: 1.2px;
   color: #f1eeee;
 }
+
+nav  ul li a {
+  color: inherit;
+  font-style: inherit;
+  text-decoration: none;
+}
+
+/*hamburger menu button toggle actions*/
+
+#menu_toggle:checked ~ nav #menu_items {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+  padding-left: 0;
+  }
+
+#menu_toggle:checked ~ nav #menu_items li {
+  line-height: 75px;
+  text-align: center;
+  opacity: 100%;
+}
+
+#menu_toggle:checked ~ nav label {
+  margin-bottom: 50px;
+}
+
+#menu_toggle:checked ~ nav #menu_button p {
+  opacity: 100%;
+  font-size: 40px;
+  font-style: bold;
+}
+  
+#menu_toggle:checked ~ nav {
+  background-color: #3f3f3f;
+  opacity: 90%;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  z-index: 3;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+/*hamburger menu animation styles*/
+
+#menu_burger {
+  background-color: none;
+  margin: auto;
+  display: block;
+  height: 35px;
+  cursor: pointer;
+}
+
+.burger_bar {
+  width: 30px;
+  height: 2px;
+  background-color: #f1eeee;
+  margin: 8px 0;
+  transition: 0.4s;
+  display: block;
+}
+
+
+#menu_toggle:checked ~ #bar1 {
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+/*rest of website*/
 
 hr {
   height: 1px;
@@ -92,7 +194,7 @@ hr {
   list-style-type: none;
   margin: auto;
   font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
-  font-size: 20px;
+  font-size: 25px;
   font-style: normal;
   font-weight: 400;
   color: #f1eeee;
@@ -118,7 +220,7 @@ hr {
 
 #home_header_content > button > h4 {
   font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   text-align: center;
   margin: auto;
   letter-spacing: 1.6px;
@@ -133,6 +235,96 @@ hr {
   font-style: inherit;
   text-decoration: none;
 }
+
+/*GENERAL MAINTENANCE PAGE STYLES*/
+
+#maintenance_header_text {
+  height: fit-content;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+
+#maintenance_header_heading {
+  text-align: center;
+  font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
+  color: #f1eeee;
+  font-style: normal;
+  font-weight: normal;
+  margin: auto;
+  font-size: 38px;
+  padding: 15px 0px;
+  padding-top: 25px;
+  line-height: 40px;
+}
+
+#maintenance_content {
+  margin: 0px 1rem;
+  padding-bottom: 15px;
+}
+
+#maintenance_services_grid_1 {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  justify-content: center;
+  margin: auto;
+  padding-bottom: 15px;
+  height: fit-content;
+  gap: 20px
+}
+
+#maintenance_services_grid_2 {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  justify-content: center;
+  margin: auto;
+  padding-bottom: 15px;
+  height: fit-content;
+  gap: 20px
+}
+
+.maintenance_services_item {
+  background-color: #f1eeee;
+  padding: 30px;
+  width: 100%;
+  max-width: 380px;
+}
+
+.maintenance_services_item > h2 {
+  text-align: center;
+  font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
+  color:#3f3f3f;
+  font-style: normal;
+  font-weight: normal;
+  margin: auto;
+  font-size: 28px;
+  padding: 0px;
+  padding-top: 30px;
+}
+
+.maintenance_services_item > img {
+  height: 100px;
+  width: auto;
+  display: block;
+  margin: auto;
+}
+
+.services_list {
+  padding: 20px;
+  margin: auto;
+  list-style-position: inside;
+  color:#3f3f3f; 
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 30px;
+}
+
 
 h1 {
   text-align: center;
@@ -156,6 +348,7 @@ p {
   padding: 20px 0px;
   line-height: 19px;
   letter-spacing: 0.8px;
+  text-align: justify;
 }
 
 #home_about {
@@ -352,10 +545,82 @@ footer {
     line-height: 25px;
   }
 
+  #menu_button p {
+    font-size: 30px;
+    padding-left: 15px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+  }
+
+  /*MAINTENANCE TABLET STYLES*/
+
+  #maintenance_services_grid_1 {
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 1000px;
+    justify-content: space-between;
+    margin: auto;
+    padding-bottom: 15px;
+    height: fit-content;
+    gap: 20px
+  }
+  
+  #maintenance_services_grid_2 {
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 1000px;
+    justify-content: space-between;
+    margin: auto;
+    padding-bottom: 15px;
+    height: fit-content;
+    gap: 20px
+  }
+
+  .maintenance_services_item {
+    background-color: #f1eeee;
+    padding: 20px;
+    padding-top: 40px;
+    width: 50%;
+    min-width: 200px;
+    max-width: 340px;
+  } 
+ 
+  .maintenance_services_item > h2 {
+    text-align: center;
+    font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
+    color:#3f3f3f;
+    font-style: normal;
+    font-weight: normal;
+    margin: auto;
+    font-size: 28px;
+    padding: 15px 0px;
+    padding-top: 20px;
+    padding-bottom: 0px;
+  }
+
+  .maintenance_services_item >ul {
+    color:#3f3f3f; 
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 40px;
+  }
+
+  .services_list {
+    padding: 40px;
+    margin: auto;
+    list-style-position: inside;
+  }
+
+
+
+
   #footer_content,
   #home_services_content,
   #home_about,
-  #header_container {
+  #header_container,
+  #maintenance_content {
     margin: 0px 2rem;
   }
 
@@ -419,6 +684,101 @@ footer {
     line-height: 35px;
   }
 
+  nav {
+    display: block;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  nav #menu_items {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-between;
+    padding-left: 0;
+    max-width: 1000px;
+    margin-top: 15px;
+    margin-bottom: 40px;
+    margin-left: 0;
+    margin-right: 0;
+    width: inherit;
+  }
+
+  nav #menu_items li {
+    font-size: 20px;
+    color: #f1eeee;
+  }
+
+  #menu_button {
+    display: none;
+  }
+
+  /*MAINTENANCE DESKTOP STYLING*/
+
+  #maintenance_services_grid_1 {
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 1000px;
+    justify-content: space-between;
+    margin: auto;
+    padding-bottom: 15px;
+    height: fit-content;
+    gap: 20px;
+    margin-bottom: 15px;
+  }
+  
+  #maintenance_services_grid_2 {
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 1000px;
+    justify-content: space-between;
+    margin: auto;
+    padding-bottom: 15px;
+    height: fit-content;
+    gap: 20px;
+  }
+
+  .maintenance_services_item {
+    background-color: #f1eeee;
+    padding: 40px;
+    min-width: 300px;
+    max-width: 380px;
+  }
+  
+  .maintenance_services_item > h2 {
+    text-align: center;
+    font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
+    color:#3f3f3f;
+    font-style: normal;
+    font-weight: normal;
+    margin: auto;
+    font-size: 32px;
+    padding: 15px 0px;
+    padding-top: 30px;
+  }
+  
+  .maintenance_services_item > img {
+    height: 150px;
+    width: auto;
+    display: block;
+    margin: auto;
+  }
+  
+  .maintenance_services_item >ul {
+    color:#3f3f3f; 
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 40px;
+  }
+  
+  .services_list {
+    padding: 30px;
+    margin: auto;
+    list-style-position: inside;
+  }
+  
   #footer_content,
   #home_services_content,
   #home_about,
