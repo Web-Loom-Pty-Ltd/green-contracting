@@ -270,9 +270,9 @@ hr {
   font-style: normal;
   font-weight: normal;
   margin: auto;
-  font-size: 38px;
-  padding: 15px 0px;
-  padding-top: 25px;
+  font-size: 30px;
+  padding-bottom: 15px;
+  padding-top: 0px;
   line-height: 40px;
 }
 
@@ -340,6 +340,50 @@ hr {
   line-height: 30px;
 }
 
+
+/*LANDSCAPING BENEFITS PAGE STYLES*/
+
+#benefits_container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.benefit_item {
+  display: flex;
+  padding-bottom: 28px;
+  gap: 15px;
+}
+
+#benefit_1, #benefit_3, #benefit_5 {
+  flex-direction: column;
+}
+
+#benefit_2, #benefit_4, #benefit_6 {
+  flex-direction: column-reverse;
+}
+
+.benefit_image {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+}
+
+.benefit_copy {
+  padding-top: 5px;
+}
+
+.benefit_heading {
+  font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
+  color: #f1eeee;
+  font-style: normal;
+  font-weight: normal;
+  margin: auto;
+  font-size: 22px;
+  padding: 15px 0px;
+  text-align: center;
+}
+
 h1 {
   text-align: center;
   font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
@@ -347,7 +391,7 @@ h1 {
   font-style: normal;
   font-weight: normal;
   margin: auto;
-  font-size: 32px;
+  font-size: 34px;
   padding: 15px 0px;
   padding-top: 25px;
 }
@@ -488,7 +532,7 @@ footer {
   gap: 1rem;
   flex-grow: 0;
   align-items: center;
-  padding-bottom: 10px;
+  /*padding-bottom: 10px;*/
 }
 
 #whatsapp a {
@@ -551,7 +595,7 @@ footer {
 
 @media screen and (min-width: 660px) and (max-width: 1024px) {
   h1 {
-    font-size: 36px;
+    font-size: 40px;
   }
 
   p {
@@ -569,6 +613,10 @@ footer {
 
   /*MAINTENANCE TABLET STYLES*/
 
+  #maintenance_header_heading {
+    font-size: 34px;
+  }
+  
   #maintenance_services_grid_1 {
     display: flex;
     flex-wrap: nowrap;
@@ -625,6 +673,42 @@ footer {
     padding: 40px;
     margin: auto;
     list-style-position: inside;
+  }
+
+  /*BENEFITS TABLET STYLES*/
+
+  .benefit_item {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 40px;
+    gap: 30px;
+  }
+
+  #benefit_1, #benefit_3, #benefit_5, #benefit_2, #benefit_4, #benefit_6 {
+    flex-direction: row;
+  }
+  
+  .benefit_image {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    margin: auto;
+  }
+  
+  .benefit_copy {
+    padding-left: 25px;
+    padding-top: 10px;
+  }
+  
+  .benefit_heading {
+    font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
+    color: #f1eeee;
+    font-style: normal;
+    font-weight: normal;
+    margin: auto;
+    font-size: 26px;
+    padding: 15px 0px;
+    text-align: left;
   }
 
   #footer_content,
@@ -727,6 +811,10 @@ footer {
 
   /*MAINTENANCE DESKTOP STYLING*/
 
+  #maintenance_header_heading {
+    font-size: 42px;
+  }
+ 
   #maintenance_services_grid_1 {
     display: flex;
     flex-wrap: nowrap;
@@ -790,6 +878,43 @@ footer {
     list-style-position: inside;
   }
 
+  /*BENEFITS DESKTOP STYLING*/
+
+  .benefit_item {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 40px;
+    gap: 35px;
+  }
+
+  #benefit_1, #benefit_3, #benefit_5, #benefit_2, #benefit_4, #benefit_6 {
+    flex-direction: row;
+  }
+    
+  .benefit_image {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+  }
+  
+  .benefit_copy {
+    padding-left: 30px;
+    padding-top: 10px;
+  }
+  
+  .benefit_heading {
+    font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
+    color: #f1eeee;
+    font-style: normal;
+    font-weight: normal;
+    margin: auto;
+    font-size: 30px;
+    padding: 15px 0px;
+    text-align: left;
+  }
+
+
   #footer_content,
   #home_services_content,
   #home_about,
@@ -802,8 +927,8 @@ footer {
   }
 
   #home_header_outline {
-    padding-top: 150px;
-    padding-bottom: 150px;
+    padding-top: 135px;
+    padding-bottom: 135px;
   }
 
   #home_header_text {
