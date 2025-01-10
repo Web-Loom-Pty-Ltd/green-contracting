@@ -11,12 +11,8 @@ html {
 
 header {
   background-image: url("../img/GC_header_background.webp");
-  background: linear-gradient(
-      0deg,
-      #214d28 0%,
-      rgba(30, 30, 30, 0.5) 17%,
-      #1e1e1e 100%
-    ),
+  background:
+    linear-gradient(0deg, #214d28 0%, rgba(30, 30, 30, 0.5) 17%, #1e1e1e 100%),
     linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%),
     url("../img/GC_header_background.webp") lightgray 1.238px 0px / 99.01% 100%
       no-repeat;
@@ -340,7 +336,6 @@ hr {
   line-height: 30px;
 }
 
-
 /*LANDSCAPING BENEFITS PAGE STYLES*/
 
 #benefits_container {
@@ -354,11 +349,16 @@ hr {
   gap: 15px;
 }
 
-#benefit_1, #benefit_3, #benefit_5, #benefit_7 {
+#benefit_1,
+#benefit_3,
+#benefit_5,
+#benefit_7 {
   flex-direction: column;
 }
 
-#benefit_2, #benefit_4, #benefit_6 {
+#benefit_2,
+#benefit_4,
+#benefit_6 {
   flex-direction: column-reverse;
 }
 
@@ -616,7 +616,7 @@ footer {
   #maintenance_header_heading {
     font-size: 34px;
   }
-  
+
   #maintenance_services_grid_1 {
     display: flex;
     flex-wrap: nowrap;
@@ -684,22 +684,28 @@ footer {
     gap: 30px;
   }
 
-  #benefit_1, #benefit_3, #benefit_5, #benefit_2, #benefit_4, #benefit_6, #benefit_7 {
+  #benefit_1,
+  #benefit_3,
+  #benefit_5,
+  #benefit_2,
+  #benefit_4,
+  #benefit_6,
+  #benefit_7 {
     flex-direction: row;
   }
-  
+
   .benefit_image {
     border-radius: 50%;
     width: 250px;
     height: 250px;
     margin: auto;
   }
-  
+
   .benefit_copy {
     padding-left: 25px;
     padding-top: 10px;
   }
-  
+
   .benefit_heading {
     font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
     color: #f1eeee;
@@ -814,7 +820,7 @@ footer {
   #maintenance_header_heading {
     font-size: 42px;
   }
- 
+
   #maintenance_services_grid_1 {
     display: flex;
     flex-wrap: nowrap;
@@ -887,22 +893,28 @@ footer {
     gap: 35px;
   }
 
-  #benefit_1, #benefit_3, #benefit_5, #benefit_2, #benefit_4, #benefit_6, #benefit_7{
+  #benefit_1,
+  #benefit_3,
+  #benefit_5,
+  #benefit_2,
+  #benefit_4,
+  #benefit_6,
+  #benefit_7 {
     flex-direction: row;
   }
-    
+
   .benefit_image {
     border-radius: 50%;
     width: 300px;
     height: 300px;
     margin: auto;
   }
-  
+
   .benefit_copy {
     padding-left: 30px;
     padding-top: 10px;
   }
-  
+
   .benefit_heading {
     font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
     color: #f1eeee;
@@ -913,7 +925,6 @@ footer {
     padding: 15px 0px;
     text-align: left;
   }
-
 
   #footer_content,
   #home_services_content,
