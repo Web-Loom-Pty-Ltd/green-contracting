@@ -373,6 +373,19 @@ hr {
   padding-top: 5px;
 }
 
+.benefit_copy a {
+  color: blue;
+}
+
+.benefit_copy a:hover {
+  color: #1e1e1e;
+  text-decoration: none;
+}
+
+.benefit_copy a:visited {
+  color:blueviolet;
+}
+
 .benefit_heading {
   font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
   color: #f1eeee;
@@ -482,6 +495,10 @@ footer {
   background-color: #3f3f3f;
   height: fit-content;
   width: auto;
+}
+
+#footer_404 {
+  background-color: #214d28;
 }
 
 #footer_content {
