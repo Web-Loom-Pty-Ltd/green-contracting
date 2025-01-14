@@ -374,7 +374,7 @@ hr {
 }
 
 .benefit_copy a {
-  color: blue;
+  color: whitesmoke;
 }
 
 .benefit_copy a:hover {
@@ -383,7 +383,7 @@ hr {
 }
 
 .benefit_copy a:visited {
-  color: blueviolet;
+  color: whitesmoke;
 }
 
 .benefit_heading {

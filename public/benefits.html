@@ -25,10 +25,6 @@
 
     <!-- Google Fonts -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
       rel="stylesheet"
     />
@@ -107,7 +103,7 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="maintenance.html">General Maintenance</a></li>
             <li><a href="benefits.html">Landscaping Benefits</a></li>
-            <li><a href="#footer_content">Contact</a></li>
+            <li><a href="#footer_content" id="contact_link">Contact</a></li>
           </ul>
         </nav>
 
@@ -132,7 +128,7 @@
       <div id="maintenance_content">
         <div id="benefits_container">
           <div class="benefit_item" id="benefit_1">
-            <img class="benefit_image" src="img/property.jpg" loading="lazy" />
+            <img class="benefit_image" src="img/property.webp" loading="lazy" />
             <div class="benefit_text">
               <h2 class="benefit_heading">1. INCREASES PROPERTY VALUE</h2>
               <p class="benefit_copy">
@@ -169,12 +165,12 @@
             </div>
             <img
               class="benefit_image"
-              src="img/cool_environment.jpg"
+              src="img/cool_environment.webp"
               loading="lazy"
             />
           </div>
           <div class="benefit_item" id="benefit_3">
-            <img class="benefit_image" src="img/quality.jpg" loading="lazy" />
+            <img class="benefit_image" src="img/quality.webp" loading="lazy" />
             <div class="benefit_text">
               <h2 class="benefit_heading">3. IMPROVES WATER AND AIR QUALITY</h2>
               <p class="benefit_copy">
@@ -208,12 +204,12 @@
             </div>
             <img
               class="benefit_image"
-              src="img/irrigation.jpg"
+              src="img/irrigation.webp"
               loading="lazy"
             />
           </div>
           <div class="benefit_item" id="benefit_5">
-            <img class="benefit_image" src="img/erosion.jpg" loading="lazy" />
+            <img class="benefit_image" src="img/erosion.webp" loading="lazy" />
             <div class="benefit_text">
               <h2 class="benefit_heading">5. PREVENTS EROSION</h2>
               <p class="benefit_copy">
@@ -240,10 +236,14 @@
                 life remains healthy and is sustained over time.
               </p>
             </div>
-            <img class="benefit_image" src="img/wildlife.jpg" loading="lazy" />
+            <img class="benefit_image" src="img/wildlife.webp" loading="lazy" />
           </div>
           <div class="benefit_item" id="benefit_7">
-            <img class="benefit_image" src="img/wellbeing.jpg" loading="lazy" />
+            <img
+              class="benefit_image"
+              src="img/wellbeing.webp"
+              loading="lazy"
+            />
             <div class="benefit_text">
               <h2 class="benefit_heading">7. IMPROVES WELL-BEING</h2>
               <p class="benefit_copy">
@@ -325,5 +325,12 @@
         </div>
       </div>
     </footer>
+    <script>
+      document
+        .getElementById("contact_link")
+        .addEventListener("click", function () {
+          document.getElementById("menu_toggle").checked = false;
+        });
+    </script>
   </body>
 </html>
