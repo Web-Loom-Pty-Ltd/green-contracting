@@ -107,7 +107,7 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="maintenance.html">General Maintenance</a></li>
             <li><a href="benefits.html">Landscaping Benefits</a></li>
-            <li><a href="#footer_content">Contact</a></li>
+            <li><a href="#footer_content" id="contact_link">Contact</a></li>
           </ul>
         </nav>
 
@@ -329,5 +329,12 @@
         </div>
       </div>
     </footer>
+    <script>
+      document
+        .getElementById("contact_link")
+        .addEventListener("click", function () {
+          document.getElementById("menu_toggle").checked = false;
+        });
+    </script>
   </body>
 </html>
