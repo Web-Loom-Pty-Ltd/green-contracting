@@ -11,12 +11,8 @@ html {
 
 header {
   background-image: url("../img/GC_header_background.webp");
-  background: linear-gradient(
-      0deg,
-      #214d28 0%,
-      rgba(30, 30, 30, 0.5) 17%,
-      #1e1e1e 100%
-    ),
+  background:
+    linear-gradient(0deg, #214d28 0%, rgba(30, 30, 30, 0.5) 17%, #1e1e1e 100%),
     linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%),
     url("../img/GC_header_background.webp") lightgray 1.238px 0px / 99.01% 100%
       no-repeat;
