@@ -217,7 +217,7 @@ hr {
   margin-bottom: 15px;
 }
 
-#home_header_content > button {
+/*#home_header_content > button {
   height: 45px;
   width: 120px;
   background-color: #214d28;
@@ -241,6 +241,22 @@ hr {
 #home_header_content > button > h4 > a {
   color: inherit;
   font-style: inherit;
+  text-decoration: none;
+}*/
+
+#home_header_content a {
+  background-color: #214d28;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  text-align: center;
+  margin: auto;
+  letter-spacing: 1.6px;
+  color: #f1eeee;
+  font-style: normal;
+  font-weight: normal;
+  padding: 15px 30px;
+  padding-top: 20px;
   text-decoration: none;
 }
 
@@ -519,7 +535,7 @@ footer {
   padding-bottom: 20px;
 }
 
-#footer_business_hours > h4 {
+#footer_business_hours > h2 {
   font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
   color: #f1eeee;
   font-size: 24px;
@@ -754,13 +770,29 @@ footer {
     line-height: 55px;
   }
 
-  #home_header_content > button > h4 {
+  /*#home_header_content > button > h4 {
     font-size: 24px;
   }
 
   #home_header_content > button {
     width: 200px;
     height: 75px;
+  }*/
+
+  #home_header_content a {
+    background-color: #214d28;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    text-align: center;
+    margin: auto;
+    letter-spacing: 1.6px;
+    color: #f1eeee;
+    font-style: normal;
+    font-weight: normal;
+    padding: 20px 40px;
+    padding-top: 25px;
+    text-decoration: none;
   }
 
   #services_grid {
@@ -784,7 +816,7 @@ footer {
     gap: 0px;
   }
 
-  #footer_business_hours > h4 {
+  #footer_business_hours > h2 {
     font-size: 28px;
   }
 }
@@ -962,13 +994,29 @@ footer {
     line-height: 60px;
   }
 
-  #home_header_content > button > h4 {
+  /*#home_header_content > button > h4 {
     font-size: 32px;
   }
 
   #home_header_content > button {
     width: 300px;
     height: 90px;
+  }*/
+
+  #home_header_content a {
+    background-color: #214d28;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    text-align: center;
+    margin: auto;
+    letter-spacing: 1.6px;
+    color: #f1eeee;
+    font-style: normal;
+    font-weight: normal;
+    padding: 25px 50px;
+    padding-top: 30px;
+    text-decoration: none;
   }
 
   #services_grid {
@@ -994,7 +1042,7 @@ footer {
     padding-top: 20px;
   }
 
-  #footer_business_hours > h4 {
+  #footer_business_hours > h2 {
     font-size: 32px;
   }
 
