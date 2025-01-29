@@ -9,6 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
 
     <!-- Normalize.min.css import -->
     <link
@@ -128,7 +131,12 @@
       <div id="maintenance_content">
         <div id="benefits_container">
           <div class="benefit_item" id="benefit_1">
-            <img class="benefit_image" src="img/property.webp" loading="lazy" alt="tall lawn grass in the foreground with a large house blurred in the background" />
+            <img
+              class="benefit_image"
+              src="img/property.webp"
+              loading="lazy"
+              alt="tall lawn grass in the foreground with a large house blurred in the background"
+            />
             <div class="benefit_text">
               <h2 class="benefit_heading">1. INCREASES PROPERTY VALUE</h2>
               <p class="benefit_copy">
@@ -171,7 +179,12 @@
             />
           </div>
           <div class="benefit_item" id="benefit_3">
-            <img class="benefit_image" src="img/quality.webp" loading="lazy" alt="a small natural river surrounded by lush vegetation"/>
+            <img
+              class="benefit_image"
+              src="img/quality.webp"
+              loading="lazy"
+              alt="a small natural river surrounded by lush vegetation"
+            />
             <div class="benefit_text">
               <h2 class="benefit_heading">3. IMPROVES WATER AND AIR QUALITY</h2>
               <p class="benefit_copy">
@@ -211,7 +224,12 @@
             />
           </div>
           <div class="benefit_item" id="benefit_5">
-            <img class="benefit_image" src="img/erosion.webp" loading="lazy" alt="a short spade digging into dirt"/>
+            <img
+              class="benefit_image"
+              src="img/erosion.webp"
+              loading="lazy"
+              alt="a short spade digging into dirt"
+            />
             <div class="benefit_text">
               <h2 class="benefit_heading">5. PREVENTS EROSION</h2>
               <p class="benefit_copy">
@@ -238,7 +256,12 @@
                 life remains healthy and is sustained over time.
               </p>
             </div>
-            <img class="benefit_image" src="img/wildlife.webp" loading="lazy" alt="a small light brown bird sitting on a branch with pink flowers" />
+            <img
+              class="benefit_image"
+              src="img/wildlife.webp"
+              loading="lazy"
+              alt="a small light brown bird sitting on a branch with pink flowers"
+            />
           </div>
           <div class="benefit_item" id="benefit_7">
             <img
@@ -328,12 +351,6 @@
         </div>
       </div>
     </footer>
-    <script nonce="LkmPQF3BzUSmWOvY">
-      document
-        .getElementById("contact_link")
-        .addEventListener("click", function () {
-          document.getElementById("menu_toggle").checked = false;
-        });
-    </script>
+    <script src="scripts/toggle.js" defer nonce="LkmPQF3BzUSmWOvY"></script>
   </body>
 </html>
